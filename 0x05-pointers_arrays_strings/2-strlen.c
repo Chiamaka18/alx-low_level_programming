@@ -1,14 +1,17 @@
- #include "main.h"
-
+#include "main.h"
+#include <string.h>
 /**
-* _puts -> this is a function that puts
-* @str: a param to _puts function
+* _strlen -> function to get the length of a string
+* @s: string pointer to passed to this function
+* Return: returns length of the string
 */
-void _puts(char *str)
+int _strlen(char *s)
 {
-	for (; *str != '\0'; str++)
+	int len;
+
+	for(; *s != '\0'; s++)
 	{
-		_putchar(*str);
+		len += 1;
 	}
-	_putchar('\n');
-}
+	return (len);
+}}
